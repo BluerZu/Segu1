@@ -1,0 +1,9 @@
+Comandos para crear una access list:
+
+Router(config)# access-list 1 deny 192.168.10.0 0.0.0.255
+
+Router(config)# access-list 1 permit any
+
+Router(config)# interface FastEthernet1/0
+
+Router(config-if)# ip access-group 1 in
